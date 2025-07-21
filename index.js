@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors({
   origin: function(origin, callback) {
     const allowedOrigins = [
+      'https://danielloo03.github.io',
       'https://danielloo03.github.io/algo',
       'https://danielloo03.github.io/algo/',
     ];
