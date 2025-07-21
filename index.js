@@ -5,7 +5,7 @@ const sequelize = require('./db/connection');
 const inputsRouter = require('./routes/inputs');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors({ origin: 'https://danielloo03.github.io/algo/' }));
 app.use(bodyParser.json());
